@@ -1,0 +1,74 @@
+/* AuthPage.css */
+.auth-wrapper {
+    max-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #f8f9fa; */
+    padding: 40px 15px;
+}
+
+.auth-box {
+    width: 950px;
+    max-width: 100%;
+    border: 3px solid #3498db;
+    height: 600px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    /* align-items: center; */
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease-in-out;
+}
+
+.auth-left,
+.auth-right {
+    flex: 1;
+    /* justify-content: center; */
+    padding: 0px 10px;
+    transition: all 0.6s ease-in-out;
+}
+
+.auth-left {
+    background: #ffffff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-right {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/690/713/small_2x/white-notepad-and-ink-pen-on-the-wooden-desk-register-now-concept-photo.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.toggle-box {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.toggle-box h3 {
+    margin-bottom: 20px;
+}
+
+.auth-box.register-mode .auth-left {
+    transform: translateX(100%);
+}
+
+.auth-box.register-mode .auth-right {
+    transform: translateX(-100%);
+}

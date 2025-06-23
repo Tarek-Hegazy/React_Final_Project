@@ -1,0 +1,118 @@
+/* posts-style.css */
+
+/* General pastel section wrapper */
+.pastel-section {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #4b5563;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #7dd3fc;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Post Card */
+.post-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.post-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h5 {
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.post-card p {
+    color: #6b7280;
+}
+
+/* Author Info */
+.post-card .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 12px;
+}
+
+.post-card .author img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #a5f3fc;
+}
+
+.post-card .author-name {
+    color: #0ea5e9;
+    font-weight: 600;
+}
+
+.post-card .date {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Buttons */
+.btn-outline-primary,
+.btn-outline-warning,
+.btn-outline-danger {
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0ea5e9;
+    color: #fff;
+    border-color: #0ea5e9;
+}
+
+.btn-outline-warning:hover {
+    background-color: #fbbf24;
+    color: #fff;
+    border-color: #fbbf24;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ef4444;
+    color: #fff;
+    border-color: #ef4444;
+}
+
+/* Toastify Fix */
+.Toastify__toast {
+    border-radius: 12px !important;
+    font-weight: 500;
+}

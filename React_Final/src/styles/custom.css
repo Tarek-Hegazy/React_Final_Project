@@ -1,0 +1,78 @@
+/* === Carousel image full cover === */
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* === Section titles === */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+    text-align: center;
+}
+
+/* === Card hover for feature icons === */
+.feature-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* === Avatar image in about section === */
+.creator-section {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    animation: fadeIn 1s ease-in-out;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.creator-img {
+    max-width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.creator-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.creator-avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* خلفية شفافة سوداء */
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
